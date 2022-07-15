@@ -1,7 +1,11 @@
-name: "CBUS2MQTT"
+name: "cbus2mqtt"
 description: "Home Assistant Add-on that runs cmqttd (https://cbus.readthedocs.io/en/latest/cmqttd.html)"
-version: "0.1.0"
+version: "0.4.0"
 slug: "cbus2mqtt"
+url: "https://github.com/MtSamsonite/ha-cbus2mqtt"
+startup: "application"
+boot: "auto"
+image: "mtsamsonite/cbus2mqtt-{arch}"
 init: false
 arch:
   - aarch64
