@@ -15,7 +15,9 @@ This add-on also includes a pull request (by others) to the original cmqttd impl
 Instructions
 ## Requirements
 You need to have a MQTT server operating to use this add on.  If you do not currently operate a MQTT server it is recommended you the Mosquitto MQTT Server official add-on for home assistant. You can add this via the home assistant interface by navigating to the Add-on Store.
+
 You will also need to supply a username and password to access the MQTT Broker.  If you are using the Home Assistant Mosquitto MQTT official add-on you can simply create a user in Home Assistant. The Mosquitto MQTT server add on can authenticate against Home Assistant.
+
 You will also need to install the MQTT integration for Home Assistant and ensure that the MQTT discovery option is enabled.  This will allow Home Assistant to discover the lighting groups on your CBUS lighting circuit and import them as lights and sensors.
 Home Assistant add on repository : https://github.com/MtSamsonite/ha-cbus2mqtt
 ## Basic Configuration
