@@ -15,7 +15,7 @@ This add on has only been possible due to the development of the cmqttd process 
 This add-on also includes a pull request (by others) to the original cmqttd implementation For details on the pull request which has been included refer to https://github.com/micolous/cbus/pull/31
 
 ## Requirements
-You need to have a MQTT server operating to use this add on.  If you do not currently operate a MQTT server it is recommended you the Mosquitto MQTT Server official add-on for home assistant. You can add this via the home assistant interface by navigating to the Add-on Store.
+You need to have a MQTT server operating to use this add on.  If you do not currently operate a MQTT server it is recommended you add the Mosquitto MQTT Server official add-on for home assistant. You can add this via the home assistant interface by navigating to the Add-on Store.
 
 You will also need to supply a username and password to access the MQTT Broker.  If you are using the Home Assistant Mosquitto MQTT official add-on you can simply create a user in Home Assistant. The Mosquitto MQTT server add on can authenticate against Home Assistant.
 
