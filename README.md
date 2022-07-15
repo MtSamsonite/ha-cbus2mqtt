@@ -96,8 +96,7 @@ no_clock is the equivalent of cmqttd parameter --no-clock
 log_verbosity is the equivalent of cmqttd parameter --verbosity
 
 ## Troubleshooting
-1.	Check the parameters are passing through correctly.  This can be seen in the logs just prior to starting cmqttd the startup script outputs a statement like:
-
+1.	Check the parameters are passing through correctly.  This can be seen in the logs just prior to starting cmqttd the startup script outputs a statement like: 
 Running cmqttd with flags: --broker-address core-mosquitto --timesync 300 --tcp 192.168.1.131:10001 --broker-disable-tls --broker-auth /etc/cmqttd/auth
 2.	If you have filled in an option and it is not being displayed as a parameter on the line above as you expect, then check the log for errors with the value you provided.
 3.	Check the logs for any further errors.
