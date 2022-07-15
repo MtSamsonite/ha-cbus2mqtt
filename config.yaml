@@ -1,0 +1,34 @@
+name: "CBUS2MQTT"
+description: "Home Assistant Add-on that runs cmqttd (https://cbus.readthedocs.io/en/latest/cmqttd.html)"
+version: "0.1.0"
+slug: "cbus2mqtt"
+init: false
+arch:
+  - aarch64
+  - amd64
+  - armhf
+  - armv7
+  - i386
+map:
+  - config:ro
+options:
+  mqtt_broker_address: core-mosquitto
+  mqtt_user: null
+  mqtt_password: null
+  tcp_or_serial: "Use a TCP connection to CBUS PCI or CNI"
+  cbus_connection_string:  null
+schema:
+  mqtt_broker_address: "str?"
+  mqtt_user: "str?"
+  mqtt_password: "str?"
+  tcp_or_serial: list(Use a IP connection to CBUS|Use a serial connection to CBUS)
+  cbus_connection_string: str
+  use_tls_for_mqtt: bool?
+  mqtt_broker_port: int(1,99999)?
+  broker_ca: str?
+  broker_client_cert: str?
+  broker_client_key: str?
+  project_file: str?
+  timesync: int(1,9999)?
+  no_clock: bool?
+  log_verbosity: str?
