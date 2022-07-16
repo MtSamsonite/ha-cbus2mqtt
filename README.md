@@ -51,7 +51,14 @@ tcp_or_serial is used to determine which of the following two cmqttd parameters 
 In here you need to enter the connection string that will be passed to cmqttd for your serial or tcp connection. (selected in the field above).
 Serial interfaces
 
-A serial connection requires a valid path to your serial device.
+A serial connection requires a valid path to your serial device and would be something like one of the following
+/dev/ttyS0
+/dev/ttyS1
+/dev/serial/by-id/usb-XXXX_XXXX-XXXX
+
+For an IP connection enter the IP address of your CNI or CBUS IP gateway followed by a colon (:) and then the port number.  By default the CNI uses port number 10001.  So for example a valid entry in here would be something like 192.168.1.131:10001
+
+The Connection string is used as the value for cmqttd parameters --serial or --tcp dependant on the option selected for either serial or IP connection.
 
 ## Advanced Configuration
 To view advanced configuration options choose the “Show unused optional configuration options”
