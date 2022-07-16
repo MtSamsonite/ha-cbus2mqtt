@@ -52,8 +52,8 @@ In here you need to enter the connection string that will be passed to cmqttd fo
 Serial interfaces
 
 A serial connection requires a valid path to your serial device and would be something like one of the following
-/dev/ttyS0
-/dev/ttyS1
+/dev/ttyS0, 
+/dev/ttyS1, or 
 /dev/serial/by-id/usb-XXXX_XXXX-XXXX
 
 For an IP connection enter the IP address of your CNI or CBUS IP gateway followed by a colon (:) and then the port number.  By default the CNI uses port number 10001.  So for example a valid entry in here would be something like 192.168.1.131:10001
