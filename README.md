@@ -6,8 +6,8 @@ cbus2mqtt is a Home Assistant add on runs the cmqttd process to communicate with
 This add-on is currently in beta awaiting real world testing.  It is at the end of the day simply running the cmqttd Docker container with some minor modifictions. Testing has shown it passes through the home assistant configuration options correctly and the local build version was tested on a CBUS CNI.  (I dont have CBUS so my testing is limited)
 
 ## Installation
-To install Home Assistant you need to add a repository to your Home Assistant Add-on Store.
-1.	From the main menu select System, then Add-ons
+To install the add-on you need to add a repository to your Home Assistant Add-on Store.
+1.	From the main menu in Home Assistant select System, then Add-ons
 2.	In the lower right corner click on the blue button titled ADD-ON-STORE
 3.	In the top right click on the 3 vertical dots (be careful to click on the home assistant dots and not your browser menu dots)
 4.	Select Repositories
@@ -49,14 +49,20 @@ Select the type of interface used to connect to your CBUS system.  The cmqttd pr
 tcp_or_serial is used to determine which of the following two cmqttd parameters are employed: --serial or –tcp.
 ### cbus_connection_string
 In here you need to enter the connection string that will be passed to cmqttd for your serial or tcp connection. (selected in the field above).
-Serial interfaces
+
+#### Serial interfaces
 
 A serial connection requires a valid path to your serial device and would be something like one of the following
+
 /dev/ttyS0, 
+
 /dev/ttyS1, or 
+
 /dev/serial/by-id/usb-XXXX_XXXX-XXXX
 
-For an IP connection enter the IP address of your CNI or CBUS IP gateway followed by a colon (:) and then the port number.  By default the CNI uses port number 10001.  So for example a valid entry in here would be something like 192.168.1.131:10001
+#### TCP/IP Connection
+
+For a TCP/IP connection enter the IP address of your CNI or CBUS IP gateway followed by a colon (:) and then the port number.  By default the CNI uses port number 10001.  So for example a valid entry in here would be something like 192.168.1.131:10001
 
 The Connection string is used as the value for cmqttd parameters --serial or --tcp dependant on the option selected for either serial or IP connection.
 
