@@ -44,7 +44,7 @@ mqtt_user and mqtt_password options are passed to the cbus2mqttd add-on which cr
 ### mqtt_password
 In this field enter the password to authenticate your access to the MQTT server.   This is the password for the user provided in the field above.
 ### tcp_or_serial
-Select the type of interface used to connect to your CBUS system.  The cmqttd process supports connections via either a serial interface to a CBUS PCI or IP connections to ethernet to a CBUS CNI device.
+Select the type of interface used to connect to your CBUS system.  The cmqttd process supports connections via either a serial interface to a CBUS PCI or TCP/IP connections a CBUS CNI device.
 
 tcp_or_serial is used to determine which of the following two cmqttd parameters are employed: --serial or –tcp.
 ### cbus_connection_string
