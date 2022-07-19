@@ -1,7 +1,7 @@
 # Changelog
 
 ## v0.5.0
-- Updated Home Assistant file access from /config  to /share. /share is intended for add-ons to share data with Home Assistant.
+- Changed containers access to Home Assistant file system from /config  to /share.
 
 ## v0.4.0
 - First Beta release based on a built image rather than local build.
