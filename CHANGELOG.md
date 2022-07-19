@@ -1,5 +1,4 @@
 # Changelog
-All notable changes to this project will be documented in this file.
 
 ## v0.5.0
 - Updated Home Assistant file access from /config  to /share. /share is intended for add-ons to share data with Home Assistant.
