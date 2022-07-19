@@ -71,9 +71,9 @@ To view advanced configuration options choose the “Show unused optional config
 
 The options below are considered for more advanced users only and as such it is expected they would read the documentation provided by the cmqttd author at https://cbus.readthedocs.io/en/latest/cmqttd.html.
 
-The cbus2mqtt add on has read only access to Home Assistants /config directory.   To use many of the options below requires that you provide files accessible by the cbus2mqtt add on.
+The cbus2mqtt add on has access to Home Assistants /share directory.   To use many of the options below requires that you provide files accessible by the cbus2mqtt add on.
 
-Advanced users wishing to utilise these features are recommended to use SAMBA or ssh or other add-ons that provide file access HA to create a directory below /config such as /config/cbus and upload any required files to this location.
+Advanced users wishing to utilise these features are recommended to use SAMBA or ssh or other add-ons that provide file access HA to create a directory below /share such as /share/cbus and upload any required files to this location.
 ## use_tls_for_mqtt
 This option is off  by default.
 
@@ -87,19 +87,19 @@ By default the cmqttd process will use port 1833 when TLS is disabled and port 8
 
 mqtt_broker_port is the equivalent of cmqttd parameter --broker-port
 ## broker_ca
-Example: /config/cbus/certificates
+Example: /share/cbus/certificates
 
 broker_ca is the equivalent of cmqttd parameter --broker-ca
 ## broker_client_cert
-Example: /config/cbus/certificates
+Example: /share/cbus/certificates
 
 broker_client_cert is the equivalent of cmqttd parameter --broker-client-cert
 ## broker_client_key
-Example: /config/cbus/client.key
+Example: /share/cbus/client.key
 
 broker_client_key is the equivalent of cmqttd parameter --broker-client-key
 ## project_file
-Example: /config/cbus/project.cbz
+Example: /share/cbus/project.cbz
 
 project_file is the equivalent of cmqttd parameter --project-file
 ## timesync
