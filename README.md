@@ -91,7 +91,7 @@ Example: /share/cbus/certificates
 
 broker_ca is the equivalent of cmqttd parameter --broker-ca
 ## broker_client_cert
-Example: /share/cbus/certificates
+Example: /share/cbus/client.cert
 
 broker_client_cert is the equivalent of cmqttd parameter --broker-client-cert
 ## broker_client_key
