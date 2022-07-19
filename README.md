@@ -73,13 +73,13 @@ The options below are considered for more advanced users only and as such it is 
 
 The cbus2mqtt add on has access to Home Assistants /share directory.   To use many of the options below requires that you provide files accessible by the cbus2mqtt add on.
 
-Advanced users wishing to utilise these features are recommended to use SAMBA or ssh or other add-ons that provide file access HA to create a directory below /share such as /share/cbus and upload any required files to this location.
+Advanced users wishing to utilise these features are recommended to use SAMBA or ssh or other add-ons that provide file access to  Home Assistant to create a directory below /share such as /share/cbus and upload any required files to this location.
 ## use_tls_for_mqtt
 This option is off  by default.
 
 To use TLS requires you create and upload certificates  and provide CA files accessible by the cbus2mqtt in the options below.
 
-The cbus2mqtt add-on has read only access to your /config directory.  Please place required files below this directory. Eg: /config/cbus.
+The cbus2mqtt add-on has access to your Home Assistant /share directory.  Please place required files below this directory. Eg: /share/cbus.
 
 use_tls_for_mqtt if disabled will include the cmqttd parameter --broker-disable-tls
 ## mqtt_broker_port
