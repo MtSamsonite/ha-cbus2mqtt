@@ -8,13 +8,14 @@ This add-on is currently in beta awaiting real world testing.  It is at the end 
 ## Installation
 To install the add-on click here - [![Open your Home Assistant instance and show the add add-on repository dialog with a specific repository URL pre-filled.](https://my.home-assistant.io/badges/supervisor_add_addon_repository.svg)](https://my.home-assistant.io/redirect/supervisor_add_addon_repository/?repository_url=https%3A%2F%2Fgithub.com%2FMtSamsonnite%2Fha-cbus2mqtt)
 
-Alternativley you need to add a repository to your Home Assistant Add-on Store.
+Alternativley to add the required repository  to your Home Assistant Add-on Store.
 1.	From the main menu in Home Assistant select System, then Add-ons
 2.	In the lower right corner click on the blue button titled ADD-ON-STORE
 3.	In the top right click on the 3 vertical dots (be careful to click on the home assistant dots and not your browser menu dots)
 4.	Select Repositories
 5.	Paste the following URL and click Add  https://github.com/MtSamsonite/ha-cbus2mqtt
-6.	You can now select the cbus2mqtt Add on from the available selection.
+
+Once you have added the repository, you can then select the cbus2mqtt Add on from the available selection.
 
 ## About cbus2mqttd
 This add on has only been possible due to the development of the cmqttd process and docker containers provided by others.  For information about cmqttd, how it works, relevant licensing and further details on how the various parameters are used, please refer to the authors documentation which can be found at https://cbus.readthedocs.io/en/latest/cmqttd.html.
