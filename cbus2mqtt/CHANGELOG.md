@@ -1,5 +1,8 @@
 # Changelog
 
+## v0.6.0
+- Added usb and uart access to container access for serial devices (rookie mistake..sorry).
+
 ## v0.5.0
 - Changed containers access to Home Assistant file system from /config  to /share.
 
