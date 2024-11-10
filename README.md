@@ -6,7 +6,7 @@ cbus2mqtt is a Home Assistant add on runs the cmqttd process to communicate with
 This add-on is currently in beta awaiting real world testing.  It is at the end of the day simply running the cmqttd Docker container with some minor modifictions. Testing has shown it passes through the home assistant configuration options correctly and the local build version was tested on a CBUS CNI.  (I dont have CBUS so my testing is limited)
 
 ## Installation
-To install the add-on click here - [![Open your Home Assistant instance and show the add add-on repository dialog with a specific repository URL pre-filled.](https://my.home-assistant.io/badges/supervisor_add_addon_repository.svg)](https://my.home-assistant.io/redirect/supervisor_add_addon_repository/?repository_url=https%3A%2F%2Fgithub.com%2FMtSamsonnite%2Fha-cbus2mqtt)
+To install the add-on click here - [![Open your Home Assistant instance and show the add add-on repository dialog with a specific repository URL pre-filled.](https://my.home-assistant.io/badges/supervisor_add_addon_repository.svg)](https://my.home-assistant.io/redirect/supervisor_add_addon_repository/?repository_url=https%3A%2F%2Fgithub.com%2FMtSamsonite%2Fha-cbus2mqtt)
 
 Alternativley to add the required repository  to your Home Assistant Add-on Store.
 1.	From the main menu in Home Assistant select System, then Add-ons
